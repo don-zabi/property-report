@@ -148,6 +148,27 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
     padding:10px 7px;
   }
 }
+
+.property-jump-link{
+  color:var(--accent);
+  text-decoration:none;
+  font-weight:800;
+  border-bottom:1px dotted rgba(36,87,214,.45);
+}
+.property-jump-link:hover{
+  color:#173d9e;
+  border-bottom-style:solid;
+}
+.property-card{
+  scroll-margin-top:18px;
+}
+.property-card.jump-highlight{
+  animation:jumpHighlight 1.8s ease;
+}
+@keyframes jumpHighlight{
+  0%{box-shadow:0 0 0 5px rgba(36,87,214,.22),0 6px 18px rgba(20,31,55,.05);}
+  100%{box-shadow:0 6px 18px rgba(20,31,55,.05);}
+}
 </style>
 </head>
 <body>
@@ -157,7 +178,6 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <h1>住宅 比較レポート</h1>
 <p>物件価格・駅距離だけでなく、マンション管理、修繕資金、道路権利、災害リスク、10年後の売却しやすさまで横断評価。</p>
 </section>
-
 <h2>結論：購入推奨ランキング</h2>
 <div class="card"><div class="rank"><span>1位</span><div><b>#3 ジェム川口プライムアベニュー</b><p>川口駅4分・66.94㎡・2023年大規模修繕確認。月額39,200円は重いが、川口駅近という再販力を最優先すると首位。</p></div></div><div class="rank"><span>2位</span><div><b>#21 レクセルプラザ西川口</b><p>西川口4分・72.51㎡・12階・98戸・月額24,050円。築29年でも大規模物件×高層階×駅近の流動性が非常に強い。</p></div></div><div class="rank"><span>3位</span><div><b>#9 蕨市塚越5丁目 中古戸建</b><p>2019年築・西川口10分・土地87㎡・南道路・接道13.4m・私道負担なし。戸建の権利関係が素直。</p></div></div><div class="rank"><span>4位</span><div><b>#8 イニシア川口並木</b><p>2007年築・72㎡・最上階・西川口9分。築年、広さ、駅距離、管理負担のバランスが良い。</p></div></div><div class="rank"><span>5位</span><div><b>#4 サニーコート西川口</b><p>西川口4分が最大の武器。36戸の小規模性と修繕情報不足、掲載管理費の誤記は正式資料で確認。</p></div></div><div class="rank"><span>6位</span><div><b>#5 サンクレスト川口</b><p>川口8分・11階・67㎡。築31年だが川口駅徒歩圏で再販しやすい。設備更新・大規模修繕履歴確認が条件。</p></div></div><div class="rank"><span>7位</span><div><b>#18 蕨市南町4丁目 築浅戸建</b><p>4,570万円・2025年7月築・西川口12分・土地68.75㎡・建物95.65㎡・南東4m公道。#20より410万円安く土地も約10㎡広く、総合コスパを高く評価。</p></div></div><div class="rank"><span>8位</span><div><b>#20 蕨市南町4丁目 築浅戸建</b><p>2025年築・西川口12分・南6m公道・私道なし。道路条件は#18より良いが、4,980万円・土地58㎡のため総合では#18を上位。</p></div></div><div class="rank"><span>9位</span><div><b>#2 飯塚3丁目 中古戸建</b><p>川口11分・2017年築・5.7m公道。土地50㎡台の3階建だが、川口駅力と公道接道を評価。</p></div></div><div class="rank"><span>10位</span><div><b>#17 西青木3丁目 新築戸建</b><p>2026年9月完成・4LDK・建物111㎡・私道なし。西川口15分と3階建を考慮して上位一歩下。</p></div></div><div class="rank"><span>11位</span><div><b>#1 西青木4丁目 中古戸建</b><p>2019年築・西川口10分・100㎡級は魅力。私道持分・通行掘削権が正式確認できればさらに上げられる。</p></div></div><div class="rank"><span>12位</span><div><b>#12 ルネサンスブライトアリーナ</b><p>2007年築・80㎡超・7階。ファミリー性は高いが駅13〜14分と月額負担を考慮。</p></div></div><div class="rank"><span>13位</span><div><b>#11 ラヴィドール川口</b><p>2006年築・川口14分・8階。2021年大規模補修はプラスだが駅距離で上位に劣る。</p></div></div><div class="rank"><span>14位</span><div><b>#7 コスモ蕨エクセラ</b><p>西川口8分・75㎡・最上階。月額負担が高く、次回大規模修繕時期の確認が重要。</p></div></div><div class="rank"><span>15位</span><div><b>#19 MELDIA 蕨市塚越7丁目 新築戸建</b><p>新築・95㎡・東側4.1m公道。西川口15分、土地66㎡で再販力は駅近物件に一歩劣る。</p></div></div><div class="rank"><span>16位</span><div><b>#14 ライフピア蕨南町壱番館</b><p>2005年築・73㎡・専用駐車場付き・2,880万円は価格魅力大。ただし1階・駅15分・固定月額約4.9万円が再販上の重し。</p></div></div><div class="rank"><span>17位</span><div><b>#15 川口原町第2ローヤルコーポ</b><p>80㎡・4LDKは魅力だが、築35年・川口14分・1階・40戸・駐車場空無を考慮。</p></div></div><div class="rank"><span>18位</span><div><b>#6 西青木5丁目 中古戸建</b><p>2019年築だが西川口15分、共有私道75㎡の1/7持分、接道3mが将来売却で弱い。</p></div></div><div class="rank"><span>19位</span><div><b>#10 ソフィアグリーンサイド川口</b><p>川口10分は強いが築42年。修繕積立金約130円/㎡・月で、10年後は築50年超。正式な修繕財務確認が必須。</p></div></div><div class="rank"><span>20位</span><div><b>#13 藤和川口コープ（SUUMO表記：藤和マンション）</b><p>川口7〜9分・3,080万円は魅力だが、1980年築・28/29戸・管理形態不整合・修繕積立金4,400円/月が大きな懸念。</p></div></div></div>
 <div class="card">
@@ -220,7 +240,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <tbody>
 <tr data-age="7" data-area="100.6" data-land="79.84" data-monthly="0" data-name="西青木4丁目 中古戸建 戸建" data-no="1" data-price="4680" data-rank="11" data-type="戸建" data-walk="10" data-year="2019">
 <td><span class="num small">#1</span></td>
-<td><strong>西青木4丁目 中古戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p1" href="#p1">西青木4丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,680万円</td>
 <td>西川口駅 徒歩10分</td>
 <td>2019年9月（築約7年）</td>
@@ -230,7 +250,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="9" data-area="90.22" data-land="50.93" data-monthly="0" data-name="飯塚3丁目 中古戸建 戸建" data-no="2" data-price="4490" data-rank="9" data-type="戸建" data-walk="11" data-year="2017">
 <td><span class="num small">#2</span></td>
-<td><strong>飯塚3丁目 中古戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p2" href="#p2">飯塚3丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,490万円</td>
 <td>川口駅 徒歩11分</td>
 <td>2017年7月（築約9年）</td>
@@ -240,7 +260,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="30" data-area="66.94" data-land="0.0" data-monthly="39200" data-name="ジェム川口プライムアベニュー マンション" data-no="3" data-price="4980" data-rank="1" data-type="マンション" data-walk="4" data-year="1996">
 <td><span class="num small">#3</span></td>
-<td><strong>ジェム川口プライムアベニュー</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p3" href="#p3">ジェム川口プライムアベニュー</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,980万円</td>
 <td>川口駅 徒歩4分</td>
 <td>1996年11月（築約30年）</td>
@@ -250,7 +270,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="23" data-area="65.82" data-land="0.0" data-monthly="22300" data-name="サニーコート西川口 マンション" data-no="4" data-price="4380" data-rank="5" data-type="マンション" data-walk="4" data-year="2003">
 <td><span class="num small">#4</span></td>
-<td><strong>サニーコート西川口</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p4" href="#p4">サニーコート西川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,380万円</td>
 <td>西川口駅 徒歩4分</td>
 <td>2003年2月（築約24年）</td>
@@ -260,7 +280,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="31" data-area="67.17" data-land="0.0" data-monthly="29350" data-name="サンクレスト川口 マンション" data-no="5" data-price="4800" data-rank="6" data-type="マンション" data-walk="8" data-year="1995">
 <td><span class="num small">#5</span></td>
-<td><strong>サンクレスト川口</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p5" href="#p5">サンクレスト川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,800万円</td>
 <td>川口駅 徒歩8分</td>
 <td>1995年7月（築約31年）</td>
@@ -270,7 +290,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="7" data-area="93.2" data-land="64.39" data-monthly="0" data-name="西青木5丁目 中古戸建 戸建" data-no="6" data-price="4380" data-rank="18" data-type="戸建" data-walk="15" data-year="2019">
 <td><span class="num small">#6</span></td>
-<td><strong>西青木5丁目 中古戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p6" href="#p6">西青木5丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,380万円</td>
 <td>西川口駅 徒歩15分</td>
 <td>2019年6月（築約7年）</td>
@@ -280,7 +300,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="27" data-area="75.69" data-land="0.0" data-monthly="37380" data-name="コスモ蕨エクセラ マンション" data-no="7" data-price="4170" data-rank="14" data-type="マンション" data-walk="8" data-year="1999">
 <td><span class="num small">#7</span></td>
-<td><strong>コスモ蕨エクセラ</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p7" href="#p7">コスモ蕨エクセラ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,170万円</td>
 <td>西川口駅 徒歩8分</td>
 <td>1999年2月（築約28年）</td>
@@ -290,7 +310,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="19" data-area="72.36" data-land="0.0" data-monthly="28500" data-name="イニシア川口並木 マンション" data-no="8" data-price="4600" data-rank="4" data-type="マンション" data-walk="9" data-year="2007">
 <td><span class="num small">#8</span></td>
-<td><strong>イニシア川口並木</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p8" href="#p8">イニシア川口並木</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,600万円</td>
 <td>西川口駅 徒歩9分 / 川口駅 徒歩20分</td>
 <td>2007年10月（築約19年）</td>
@@ -300,7 +320,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="7" data-area="106.4" data-land="87.23" data-monthly="0" data-name="蕨市塚越5丁目 中古戸建 戸建" data-no="9" data-price="4800" data-rank="3" data-type="戸建" data-walk="10" data-year="2019">
 <td><span class="num small">#9</span></td>
-<td><strong>蕨市塚越5丁目 中古戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p9" href="#p9">蕨市塚越5丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,800万円</td>
 <td>西川口駅 徒歩10分</td>
 <td>2019年6月（築約7年）</td>
@@ -310,7 +330,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="42" data-area="60.95" data-land="0.0" data-monthly="19770" data-name="ソフィアグリーンサイド川口 マンション" data-no="10" data-price="3990" data-rank="19" data-type="マンション" data-walk="10" data-year="1984">
 <td><span class="num small">#10</span></td>
-<td><strong>ソフィアグリーンサイド川口</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p10" href="#p10">ソフィアグリーンサイド川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>3,990万円</td>
 <td>川口駅 徒歩10分</td>
 <td>1984年2〜5月表記（築約42年）</td>
@@ -320,7 +340,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="20" data-area="66.22" data-land="0.0" data-monthly="22300" data-name="ラヴィドール川口 マンション" data-no="11" data-price="4370" data-rank="13" data-type="マンション" data-walk="14" data-year="2006">
 <td><span class="num small">#11</span></td>
-<td><strong>ラヴィドール川口</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p11" href="#p11">ラヴィドール川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,370万円</td>
 <td>川口駅 徒歩14分</td>
 <td>2006年8月（築約20年）</td>
@@ -330,7 +350,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="19" data-area="80.88" data-land="0.0" data-monthly="32120" data-name="ルネサンスブライトアリーナ マンション" data-no="12" data-price="4980" data-rank="12" data-type="マンション" data-walk="13" data-year="2007">
 <td><span class="num small">#12</span></td>
-<td><strong>ルネサンスブライトアリーナ</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p12" href="#p12">ルネサンスブライトアリーナ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,980万円</td>
 <td>SUUMO: 川口駅 徒歩13分 ※他社に西川口13〜14分表記</td>
 <td>2007年2月（築約20年）</td>
@@ -340,7 +360,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </tr>
 <tr data-age="46" data-area="67.37" data-land="0.0" data-monthly="28859" data-name="藤和川口コープ（SUUMO表記：藤和マンション） マンション" data-no="13" data-price="3080" data-rank="20" data-type="マンション" data-walk="7" data-year="1980">
 <td><span class="num small">#13</span></td>
-<td><strong>藤和川口コープ（SUUMO表記：藤和マンション）</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p13" href="#p13">藤和川口コープ（SUUMO表記：藤和マンション）</a></strong><br/><span class="muted">マンション</span></td>
 <td>3,080万円</td>
 <td>川口駅 徒歩7〜9分（掲載差）</td>
 <td>1980年9月（築約46年）</td>
@@ -349,7 +369,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21124612/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%97%A4%E5%92%8C%E5%B7%9D%E5%8F%A3%E3%82%B3%E3%83%BC%E3%83%97+%E5%B7%9D%E5%8F%A3%E5%B8%82%E9%A3%AF%E5%A1%9A1%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="21" data-area="73.38" data-land="0.0" data-monthly="40710" data-name="ライフピア蕨南町壱番館 マンション" data-no="14" data-price="2880" data-rank="16" data-type="マンション" data-walk="15" data-year="2005">
 <td><span class="num small">#14</span></td>
-<td><strong>ライフピア蕨南町壱番館</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p14" href="#p14">ライフピア蕨南町壱番館</a></strong><br/><span class="muted">マンション</span></td>
 <td>2,880万円</td>
 <td>西川口駅 徒歩15分 / 蕨駅 徒歩20分</td>
 <td>2005年2月（築約21年）</td>
@@ -358,7 +378,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_warabi/nc_20170881/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%A9%E3%82%A4%E3%83%95%E3%83%94%E3%82%A2%E8%95%A8%E5%8D%97%E7%94%BA%E5%A3%B1%E7%95%AA%E9%A4%A8" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="35" data-area="80.41" data-land="0.0" data-monthly="32640" data-name="川口原町第2ローヤルコーポ マンション" data-no="15" data-price="4590" data-rank="17" data-type="マンション" data-walk="14" data-year="1991">
 <td><span class="num small">#15</span></td>
-<td><strong>川口原町第2ローヤルコーポ</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p15" href="#p15">川口原町第2ローヤルコーポ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,590万円</td>
 <td>川口駅 徒歩14分</td>
 <td>1991年11月（築約35年）</td>
@@ -367,7 +387,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21758242/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B7%9D%E5%8F%A3%E5%8E%9F%E7%94%BA%E7%AC%AC2%E3%83%AD%E3%83%BC%E3%83%A4%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%9D" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="22" data-area="153.61" data-land="112.13" data-monthly="0" data-name="蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工） 戸建" data-no="16" data-price="4980" data-rank="999" data-type="戸建" data-walk="14" data-year="2004">
 <td><span class="num small">#16</span></td>
-<td><strong>蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p16" href="#p16">蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,980万円</td>
 <td>西川口駅 徒歩14分</td>
 <td>2004年1月（築約22年）</td>
@@ -376,7 +396,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_warabi/nc_21405290/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA2%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="0" data-area="111.84" data-land="74.41" data-monthly="0" data-name="西青木3丁目 新築戸建 新築戸建" data-no="17" data-price="4680" data-rank="10" data-type="新築戸建" data-walk="15" data-year="2026">
 <td><span class="num small">#17</span></td>
-<td><strong>西青木3丁目 新築戸建</strong><br/><span class="muted">新築戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p17" href="#p17">西青木3丁目 新築戸建</a></strong><br/><span class="muted">新築戸建</span></td>
 <td>4,680万円</td>
 <td>西川口駅 徒歩15分</td>
 <td>2026年9月完成</td>
@@ -385,7 +405,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/ikkodate/saitama/sc_kawaguchi/nc_21617044/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E8%A5%BF%E9%9D%92%E6%9C%A83%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="1" data-area="95.65" data-land="68.75" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="18" data-price="4570" data-rank="7" data-type="戸建" data-walk="12" data-year="2025">
 <td><span class="num small">#18</span></td>
-<td><strong>蕨市南町4丁目 築浅戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p18" href="#p18">蕨市南町4丁目 築浅戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,570万円</td>
 <td>西川口駅 徒歩12分</td>
 <td>2025年7月31日完成（築約1年）</td>
@@ -397,7 +417,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 </td>
 </tr><tr data-age="0" data-area="95.65" data-land="66.78" data-monthly="0" data-name="MELDIA 蕨市塚越7丁目 新築戸建 新築戸建" data-no="19" data-price="4780" data-rank="15" data-type="新築戸建" data-walk="15" data-year="2026">
 <td><span class="num small">#19</span></td>
-<td><strong>MELDIA 蕨市塚越7丁目 新築戸建</strong><br/><span class="muted">新築戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p19" href="#p19">MELDIA 蕨市塚越7丁目 新築戸建</a></strong><br/><span class="muted">新築戸建</span></td>
 <td>4,780万円</td>
 <td>西川口駅 徒歩15分</td>
 <td>2026年7月完成</td>
@@ -406,7 +426,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://suumo.jp/ikkodate/saitama/sc_warabi/nc_21397917/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%A1%9A%E8%B6%8A7%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="1" data-area="107.47" data-land="58.35" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="20" data-price="4980" data-rank="8" data-type="戸建" data-walk="12" data-year="2025">
 <td><span class="num small">#20</span></td>
-<td><strong>蕨市南町4丁目 築浅戸建</strong><br/><span class="muted">戸建</span></td>
+<td><strong><a class="property-jump-link" data-target="p20" href="#p20">蕨市南町4丁目 築浅戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,980万円</td>
 <td>西川口駅 徒歩12分</td>
 <td>2025年8月（築約1年）</td>
@@ -415,7 +435,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td><a class="btn" href="https://realestate.yahoo.co.jp/used/house/detail_corp/b0025292100/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA4%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
 </tr><tr data-age="29" data-area="72.51" data-land="0.0" data-monthly="24050" data-name="レクセルプラザ西川口 マンション" data-no="21" data-price="4680" data-rank="2" data-type="マンション" data-walk="4" data-year="1997">
 <td><span class="num small">#21</span></td>
-<td><strong>レクセルプラザ西川口</strong><br/><span class="muted">マンション</span></td>
+<td><strong><a class="property-jump-link" data-target="p21" href="#p21">レクセルプラザ西川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,680万円</td>
 <td>西川口駅 徒歩4分</td>
 <td>1997年1月（築約29年）</td>
@@ -1117,6 +1137,32 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
   }
 
   apply();
+})();
+</script><script id="property-jump-script">
+(function(){
+  document.querySelectorAll('.property-jump-link').forEach(function(link){
+    link.addEventListener('click', function(e){
+      const targetId = link.dataset.target;
+      const target = document.getElementById(targetId);
+      if(!target) return;
+
+      e.preventDefault();
+      target.scrollIntoView({behavior:'smooth', block:'start'});
+
+      history.replaceState(null, '', '#' + targetId);
+
+      document.querySelectorAll('.property-card.jump-highlight').forEach(function(card){
+        card.classList.remove('jump-highlight');
+      });
+
+      // Restart animation reliably.
+      void target.offsetWidth;
+      target.classList.add('jump-highlight');
+      setTimeout(function(){
+        target.classList.remove('jump-highlight');
+      }, 1900);
+    });
+  });
 })();
 </script></body>
 </html>
