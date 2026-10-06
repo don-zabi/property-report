@@ -4,7 +4,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<title>住宅比較レポート</title>
+<title>住宅 比較レポート</title>
 <style>
 :root{--bg:#f5f7fb;--card:#fff;--ink:#172033;--muted:#64748b;--line:#e3e8f1;--accent:#2457d6;--good:#0b7a53;--warn:#b66a00;--bad:#b42318}
 *{box-sizing:border-box}
@@ -169,6 +169,35 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
   0%{box-shadow:0 0 0 5px rgba(36,87,214,.22),0 6px 18px rgba(20,31,55,.05);}
   100%{box-shadow:0 6px 18px rgba(20,31,55,.05);}
 }
+
+.recommendation-row td{
+  padding:10px 14px 13px !important;
+  background:#f8fafc;
+  border-top:0 !important;
+  border-bottom:1px solid #dfe6ef !important;
+  font-size:12.5px;
+  line-height:1.65;
+  color:#516074;
+}
+.recommendation-row:hover td{
+  background:#f8fafc !important;
+}
+.recommendation-rank{
+  display:inline-block;
+  font-weight:900;
+  color:#173d9e;
+  background:#eaf0ff;
+  border-radius:999px;
+  padding:3px 9px;
+  margin-right:5px;
+  white-space:nowrap;
+}
+.recommendation-reason{
+  font-weight:600;
+}
+table.compare tbody tr:not(.recommendation-row) td{
+  border-bottom:0;
+}
 </style>
 </head>
 <body>
@@ -178,16 +207,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <h1>住宅 比較レポート</h1>
 <p>物件価格・駅距離だけでなく、マンション管理、修繕資金、道路権利、災害リスク、10年後の売却しやすさまで横断評価。</p>
 </section>
-<h2>結論：購入推奨ランキング</h2>
-<div class="card"><div class="rank"><span>1位</span><div><b>#3 ジェム川口プライムアベニュー</b><p>川口駅4分・66.94㎡・2023年大規模修繕確認。月額39,200円は重いが、川口駅近という再販力を最優先すると首位。</p></div></div><div class="rank"><span>2位</span><div><b>#21 レクセルプラザ西川口</b><p>西川口4分・72.51㎡・12階・98戸・月額24,050円。築29年でも大規模物件×高層階×駅近の流動性が非常に強い。</p></div></div><div class="rank"><span>3位</span><div><b>#9 蕨市塚越5丁目 中古戸建</b><p>2019年築・西川口10分・土地87㎡・南道路・接道13.4m・私道負担なし。戸建の権利関係が素直。</p></div></div><div class="rank"><span>4位</span><div><b>#8 イニシア川口並木</b><p>2007年築・72㎡・最上階・西川口9分。築年、広さ、駅距離、管理負担のバランスが良い。</p></div></div><div class="rank"><span>5位</span><div><b>#4 サニーコート西川口</b><p>西川口4分が最大の武器。36戸の小規模性と修繕情報不足、掲載管理費の誤記は正式資料で確認。</p></div></div><div class="rank"><span>6位</span><div><b>#5 サンクレスト川口</b><p>川口8分・11階・67㎡。築31年だが川口駅徒歩圏で再販しやすい。設備更新・大規模修繕履歴確認が条件。</p></div></div><div class="rank"><span>7位</span><div><b>#18 蕨市南町4丁目 築浅戸建</b><p>4,570万円・2025年7月築・西川口12分・土地68.75㎡・建物95.65㎡・南東4m公道。#20より410万円安く土地も約10㎡広く、総合コスパを高く評価。</p></div></div><div class="rank"><span>8位</span><div><b>#20 蕨市南町4丁目 築浅戸建</b><p>2025年築・西川口12分・南6m公道・私道なし。道路条件は#18より良いが、4,980万円・土地58㎡のため総合では#18を上位。</p></div></div><div class="rank"><span>9位</span><div><b>#2 飯塚3丁目 中古戸建</b><p>川口11分・2017年築・5.7m公道。土地50㎡台の3階建だが、川口駅力と公道接道を評価。</p></div></div><div class="rank"><span>10位</span><div><b>#17 西青木3丁目 新築戸建</b><p>2026年9月完成・4LDK・建物111㎡・私道なし。西川口15分と3階建を考慮して上位一歩下。</p></div></div><div class="rank"><span>11位</span><div><b>#1 西青木4丁目 中古戸建</b><p>2019年築・西川口10分・100㎡級は魅力。私道持分・通行掘削権が正式確認できればさらに上げられる。</p></div></div><div class="rank"><span>12位</span><div><b>#12 ルネサンスブライトアリーナ</b><p>2007年築・80㎡超・7階。ファミリー性は高いが駅13〜14分と月額負担を考慮。</p></div></div><div class="rank"><span>13位</span><div><b>#11 ラヴィドール川口</b><p>2006年築・川口14分・8階。2021年大規模補修はプラスだが駅距離で上位に劣る。</p></div></div><div class="rank"><span>14位</span><div><b>#7 コスモ蕨エクセラ</b><p>西川口8分・75㎡・最上階。月額負担が高く、次回大規模修繕時期の確認が重要。</p></div></div><div class="rank"><span>15位</span><div><b>#19 MELDIA 蕨市塚越7丁目 新築戸建</b><p>新築・95㎡・東側4.1m公道。西川口15分、土地66㎡で再販力は駅近物件に一歩劣る。</p></div></div><div class="rank"><span>16位</span><div><b>#14 ライフピア蕨南町壱番館</b><p>2005年築・73㎡・専用駐車場付き・2,880万円は価格魅力大。ただし1階・駅15分・固定月額約4.9万円が再販上の重し。</p></div></div><div class="rank"><span>17位</span><div><b>#15 川口原町第2ローヤルコーポ</b><p>80㎡・4LDKは魅力だが、築35年・川口14分・1階・40戸・駐車場空無を考慮。</p></div></div><div class="rank"><span>18位</span><div><b>#6 西青木5丁目 中古戸建</b><p>2019年築だが西川口15分、共有私道75㎡の1/7持分、接道3mが将来売却で弱い。</p></div></div><div class="rank"><span>19位</span><div><b>#10 ソフィアグリーンサイド川口</b><p>川口10分は強いが築42年。修繕積立金約130円/㎡・月で、10年後は築50年超。正式な修繕財務確認が必須。</p></div></div><div class="rank"><span>20位</span><div><b>#13 藤和川口コープ（SUUMO表記：藤和マンション）</b><p>川口7〜9分・3,080万円は魅力だが、1980年築・28/29戸・管理形態不整合・修繕積立金4,400円/月が大きな懸念。</p></div></div></div>
-<div class="card">
-<b>ランキング保留：</b>
-<p><b>#16 蕨市南町2丁目 中古戸建</b>は、旭化成ホームズ旧施工・土地112.13㎡・建物153.61㎡・
-        南西11m公道・駐車2台で、物理条件だけなら上位候補です。しかしSUUMOに
-        <b>「※告知事項あり」</b>と明記されています。告知事項の内容・発生時期・心理的瑕疵の有無・
-        今後の説明義務を確認するまでは購入推奨できません。内容が軽微なら5〜10位級まで上昇余地があります。</p>
-</div>
-<div class="note"><b>個別の重大注意事項：</b>私道・告知事項・管理費の不整合・修繕財務など、購入判断に直結する注意点は<b>各物件の詳細欄に赤または黄色の警告ボックス</b>で表示しています。</div><h2>全物件 比較早見表</h2>
+<h2>全物件 比較早見表</h2>
 <div class="sort-panel" id="propertySortPanel">
 <div class="sort-panel-title">比較早見表の並べ替え・絞り込み</div>
 <div class="sort-controls">
@@ -238,7 +258,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <table class="compare">
 <thead><tr><th class="sortable-head" data-sort-key="no" title="クリックして並べ替え">No.</th><th class="sortable-head" data-sort-key="name" title="クリックして並べ替え">物件</th><th class="sortable-head" data-sort-key="price" title="クリックして並べ替え">価格</th><th class="sortable-head" data-sort-key="walk" title="クリックして並べ替え">駅</th><th class="sortable-head" data-sort-key="age" title="クリックして並べ替え">築年</th><th class="sortable-head" data-sort-key="area" title="クリックして並べ替え">面積</th><th class="sortable-head" data-sort-key="land" title="クリックして並べ替え">土地面積</th><th class="sortable-head" data-sort-key="monthly" title="クリックして並べ替え">管理費＋修繕積立</th><th class="sortable-head" data-sort-key="rank" title="クリックして並べ替え">評価</th><th>リンク</th></tr></thead>
 <tbody>
-<tr data-age="7" data-area="100.6" data-land="79.84" data-monthly="0" data-name="西青木4丁目 中古戸建 戸建" data-no="1" data-price="4680" data-rank="11" data-type="戸建" data-walk="10" data-year="2019">
+<tr data-age="7" data-area="100.6" data-land="79.84" data-monthly="0" data-name="西青木4丁目 中古戸建 戸建" data-no="1" data-price="4680" data-rank="12" data-type="戸建" data-walk="10" data-year="2019">
 <td><span class="num small">#1</span></td>
 <td><strong><a class="property-jump-link" data-target="p1" href="#p1">西青木4丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,680万円</td>
@@ -247,8 +267,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>100.60㎡</td><td>79.84㎡</td><td>—</td>
 <td>B＋（私道権利確認後）</td>
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_kawaguchi/nc_21743777/" rel="noopener" target="_blank">物件サイトへ（掲載A）</a> <a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_kawaguchi/nc_21847711/" rel="noopener" target="_blank">物件サイトへ（掲載B）</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=35.82022607204752%2C139.71092979711497" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr>
-<tr data-age="9" data-area="90.22" data-land="50.93" data-monthly="0" data-name="飯塚3丁目 中古戸建 戸建" data-no="2" data-price="4490" data-rank="9" data-type="戸建" data-walk="11" data-year="2017">
+</tr><tr class="recommendation-row" data-for="1"><td colspan="10"><span class="recommendation-rank">おすすめ 12位</span> <span class="recommendation-reason">2019年築・西川口10分・100㎡級は魅力。私道持分・通行掘削権が正式確認できればさらに上げられる。</span></td></tr>
+<tr data-age="9" data-area="90.22" data-land="50.93" data-monthly="0" data-name="飯塚3丁目 中古戸建 戸建" data-no="2" data-price="4490" data-rank="10" data-type="戸建" data-walk="11" data-year="2017">
 <td><span class="num small">#2</span></td>
 <td><strong><a class="property-jump-link" data-target="p2" href="#p2">飯塚3丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,490万円</td>
@@ -257,7 +277,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>90.22㎡</td><td>50.93㎡</td><td>—</td>
 <td>A−</td>
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_kawaguchi/nc_21533222/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
+</tr><tr class="recommendation-row" data-for="2"><td colspan="10"><span class="recommendation-rank">おすすめ 10位</span> <span class="recommendation-reason">川口11分・2017年築・5.7m公道。土地50㎡台の3階建だが、川口駅力と公道接道を評価。</span></td></tr>
 <tr data-age="30" data-area="66.94" data-land="0.0" data-monthly="39200" data-name="ジェム川口プライムアベニュー マンション" data-no="3" data-price="4980" data-rank="1" data-type="マンション" data-walk="4" data-year="1996">
 <td><span class="num small">#3</span></td>
 <td><strong><a class="property-jump-link" data-target="p3" href="#p3">ジェム川口プライムアベニュー</a></strong><br/><span class="muted">マンション</span></td>
@@ -267,7 +287,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>66.94㎡</td><td>—</td><td>39,200円</td>
 <td>A</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21858861/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
+</tr><tr class="recommendation-row" data-for="3"><td colspan="10"><span class="recommendation-rank">おすすめ 1位</span> <span class="recommendation-reason">川口駅4分・66.94㎡・2023年大規模修繕確認。月額39,200円は重いが、川口駅近という再販力を最優先すると首位。</span></td></tr>
 <tr data-age="23" data-area="65.82" data-land="0.0" data-monthly="22300" data-name="サニーコート西川口 マンション" data-no="4" data-price="4380" data-rank="5" data-type="マンション" data-walk="4" data-year="2003">
 <td><span class="num small">#4</span></td>
 <td><strong><a class="property-jump-link" data-target="p4" href="#p4">サニーコート西川口</a></strong><br/><span class="muted">マンション</span></td>
@@ -277,7 +297,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>65.82㎡</td><td>—</td><td>22,300円（外部現行情報ベース）</td>
 <td>A−</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21829165/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
+</tr><tr class="recommendation-row" data-for="4"><td colspan="10"><span class="recommendation-rank">おすすめ 5位</span> <span class="recommendation-reason">西川口4分が最大の武器。36戸の小規模性と修繕情報不足、掲載管理費の誤記は正式資料で確認。</span></td></tr>
 <tr data-age="31" data-area="67.17" data-land="0.0" data-monthly="29350" data-name="サンクレスト川口 マンション" data-no="5" data-price="4800" data-rank="6" data-type="マンション" data-walk="8" data-year="1995">
 <td><span class="num small">#5</span></td>
 <td><strong><a class="property-jump-link" data-target="p5" href="#p5">サンクレスト川口</a></strong><br/><span class="muted">マンション</span></td>
@@ -287,8 +307,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>67.17㎡</td><td>—</td><td>29,350円</td>
 <td>A−</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21321374/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="7" data-area="93.2" data-land="64.39" data-monthly="0" data-name="西青木5丁目 中古戸建 戸建" data-no="6" data-price="4380" data-rank="18" data-type="戸建" data-walk="15" data-year="2019">
+</tr><tr class="recommendation-row" data-for="5"><td colspan="10"><span class="recommendation-rank">おすすめ 6位</span> <span class="recommendation-reason">川口8分・11階・67㎡。築31年だが川口駅徒歩圏で再販しやすい。設備更新・大規模修繕履歴確認が条件。</span></td></tr>
+<tr data-age="7" data-area="93.2" data-land="64.39" data-monthly="0" data-name="西青木5丁目 中古戸建 戸建" data-no="6" data-price="4380" data-rank="19" data-type="戸建" data-walk="15" data-year="2019">
 <td><span class="num small">#6</span></td>
 <td><strong><a class="property-jump-link" data-target="p6" href="#p6">西青木5丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,380万円</td>
@@ -297,8 +317,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>93.20㎡</td><td>64.39㎡</td><td>—</td>
 <td>B−</td>
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_kawaguchi/nc_78984549/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="27" data-area="75.69" data-land="0.0" data-monthly="37380" data-name="コスモ蕨エクセラ マンション" data-no="7" data-price="4170" data-rank="14" data-type="マンション" data-walk="8" data-year="1999">
+</tr><tr class="recommendation-row" data-for="6"><td colspan="10"><span class="recommendation-rank">おすすめ 19位</span> <span class="recommendation-reason">2019年築だが西川口15分、共有私道75㎡の1/7持分、接道3mが将来売却で弱い。</span></td></tr>
+<tr data-age="27" data-area="75.69" data-land="0.0" data-monthly="37380" data-name="コスモ蕨エクセラ マンション" data-no="7" data-price="4170" data-rank="15" data-type="マンション" data-walk="8" data-year="1999">
 <td><span class="num small">#7</span></td>
 <td><strong><a class="property-jump-link" data-target="p7" href="#p7">コスモ蕨エクセラ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,170万円</td>
@@ -307,7 +327,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>75.69㎡</td><td>—</td><td>37,380円（＋町会費200円）</td>
 <td>B＋</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_warabi/nc_20022964/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
+</tr><tr class="recommendation-row" data-for="7"><td colspan="10"><span class="recommendation-rank">おすすめ 15位</span> <span class="recommendation-reason">西川口8分・75㎡・最上階。月額負担が高く、次回大規模修繕時期の確認が重要。</span></td></tr>
 <tr data-age="19" data-area="72.36" data-land="0.0" data-monthly="28500" data-name="イニシア川口並木 マンション" data-no="8" data-price="4600" data-rank="4" data-type="マンション" data-walk="9" data-year="2007">
 <td><span class="num small">#8</span></td>
 <td><strong><a class="property-jump-link" data-target="p8" href="#p8">イニシア川口並木</a></strong><br/><span class="muted">マンション</span></td>
@@ -317,7 +337,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>72.36㎡</td><td>—</td><td>28,500円（＋町会費267円＋CATV216円）</td>
 <td>A−</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_76772646/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
+</tr><tr class="recommendation-row" data-for="8"><td colspan="10"><span class="recommendation-rank">おすすめ 4位</span> <span class="recommendation-reason">2007年築・72㎡・最上階・西川口9分。築年、広さ、駅距離、管理負担のバランスが良い。</span></td></tr>
 <tr data-age="7" data-area="106.4" data-land="87.23" data-monthly="0" data-name="蕨市塚越5丁目 中古戸建 戸建" data-no="9" data-price="4800" data-rank="3" data-type="戸建" data-walk="10" data-year="2019">
 <td><span class="num small">#9</span></td>
 <td><strong><a class="property-jump-link" data-target="p9" href="#p9">蕨市塚越5丁目 中古戸建</a></strong><br/><span class="muted">戸建</span></td>
@@ -327,8 +347,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>106.40㎡</td><td>87.23㎡</td><td>—</td>
 <td>A</td>
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_warabi/nc_21220758/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="42" data-area="60.95" data-land="0.0" data-monthly="19770" data-name="ソフィアグリーンサイド川口 マンション" data-no="10" data-price="3990" data-rank="19" data-type="マンション" data-walk="10" data-year="1984">
+</tr><tr class="recommendation-row" data-for="9"><td colspan="10"><span class="recommendation-rank">おすすめ 3位</span> <span class="recommendation-reason">2019年築・西川口10分・土地87㎡・南道路・接道13.4m・私道負担なし。戸建の権利関係が素直。</span></td></tr>
+<tr data-age="42" data-area="60.95" data-land="0.0" data-monthly="19770" data-name="ソフィアグリーンサイド川口 マンション" data-no="10" data-price="3990" data-rank="20" data-type="マンション" data-walk="10" data-year="1984">
 <td><span class="num small">#10</span></td>
 <td><strong><a class="property-jump-link" data-target="p10" href="#p10">ソフィアグリーンサイド川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>3,990万円</td>
@@ -337,8 +357,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>60.95㎡</td><td>—</td><td>19,770円</td>
 <td>C＋（価格と管理資料次第）</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21447100/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="20" data-area="66.22" data-land="0.0" data-monthly="22300" data-name="ラヴィドール川口 マンション" data-no="11" data-price="4370" data-rank="13" data-type="マンション" data-walk="14" data-year="2006">
+</tr><tr class="recommendation-row" data-for="10"><td colspan="10"><span class="recommendation-rank">おすすめ 20位</span> <span class="recommendation-reason">川口10分は強いが築42年。修繕積立金約130円/㎡・月で、10年後は築50年超。正式な修繕財務確認が必須。</span></td></tr>
+<tr data-age="20" data-area="66.22" data-land="0.0" data-monthly="22300" data-name="ラヴィドール川口 マンション" data-no="11" data-price="4370" data-rank="14" data-type="マンション" data-walk="14" data-year="2006">
 <td><span class="num small">#11</span></td>
 <td><strong><a class="property-jump-link" data-target="p11" href="#p11">ラヴィドール川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,370万円</td>
@@ -347,8 +367,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>66.22㎡</td><td>—</td><td>22,300円（＋ネット715円＋CATV110円）</td>
 <td>B＋</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21411581/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="19" data-area="80.88" data-land="0.0" data-monthly="32120" data-name="ルネサンスブライトアリーナ マンション" data-no="12" data-price="4980" data-rank="12" data-type="マンション" data-walk="13" data-year="2007">
+</tr><tr class="recommendation-row" data-for="11"><td colspan="10"><span class="recommendation-rank">おすすめ 14位</span> <span class="recommendation-reason">2006年築・川口14分・8階。2021年大規模補修はプラスだが駅距離で上位に劣る。</span></td></tr>
+<tr data-age="19" data-area="80.88" data-land="0.0" data-monthly="32120" data-name="ルネサンスブライトアリーナ マンション" data-no="12" data-price="4980" data-rank="13" data-type="マンション" data-walk="13" data-year="2007">
 <td><span class="num small">#12</span></td>
 <td><strong><a class="property-jump-link" data-target="p12" href="#p12">ルネサンスブライトアリーナ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,980万円</td>
@@ -357,8 +377,8 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>80.88㎡</td><td>—</td><td>32,120円（＋ネット880円＋CATV110円）</td>
 <td>B＋</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_20750607/" rel="noopener" target="_blank">物件サイトへ</a></td>
-</tr>
-<tr data-age="46" data-area="67.37" data-land="0.0" data-monthly="28859" data-name="藤和川口コープ（SUUMO表記：藤和マンション） マンション" data-no="13" data-price="3080" data-rank="20" data-type="マンション" data-walk="7" data-year="1980">
+</tr><tr class="recommendation-row" data-for="12"><td colspan="10"><span class="recommendation-rank">おすすめ 13位</span> <span class="recommendation-reason">2007年築・80㎡超・7階。ファミリー性は高いが駅13〜14分と月額負担を考慮。</span></td></tr>
+<tr data-age="46" data-area="67.37" data-land="0.0" data-monthly="28859" data-name="藤和川口コープ（SUUMO表記：藤和マンション） マンション" data-no="13" data-price="3080" data-rank="21" data-type="マンション" data-walk="7" data-year="1980">
 <td><span class="num small">#13</span></td>
 <td><strong><a class="property-jump-link" data-target="p13" href="#p13">藤和川口コープ（SUUMO表記：藤和マンション）</a></strong><br/><span class="muted">マンション</span></td>
 <td>3,080万円</td>
@@ -367,7 +387,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>67.37㎡</td><td>—</td><td>28,859円</td>
 <td>C</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21124612/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E8%97%A4%E5%92%8C%E5%B7%9D%E5%8F%A3%E3%82%B3%E3%83%BC%E3%83%97+%E5%B7%9D%E5%8F%A3%E5%B8%82%E9%A3%AF%E5%A1%9A1%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="21" data-area="73.38" data-land="0.0" data-monthly="40710" data-name="ライフピア蕨南町壱番館 マンション" data-no="14" data-price="2880" data-rank="16" data-type="マンション" data-walk="15" data-year="2005">
+</tr><tr class="recommendation-row" data-for="13"><td colspan="10"><span class="recommendation-rank">おすすめ 21位</span> <span class="recommendation-reason">川口7〜9分・3,080万円は魅力だが、1980年築・28/29戸・管理形態不整合・修繕積立金4,400円/月が大きな懸念。</span></td></tr><tr data-age="21" data-area="73.38" data-land="0.0" data-monthly="40710" data-name="ライフピア蕨南町壱番館 マンション" data-no="14" data-price="2880" data-rank="17" data-type="マンション" data-walk="15" data-year="2005">
 <td><span class="num small">#14</span></td>
 <td><strong><a class="property-jump-link" data-target="p14" href="#p14">ライフピア蕨南町壱番館</a></strong><br/><span class="muted">マンション</span></td>
 <td>2,880万円</td>
@@ -376,7 +396,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>73.38㎡</td><td>—</td><td>40,710円（＋駐車場8,000円＋町会費150円＝実質48,860円/月）</td>
 <td>B</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_warabi/nc_20170881/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%A9%E3%82%A4%E3%83%95%E3%83%94%E3%82%A2%E8%95%A8%E5%8D%97%E7%94%BA%E5%A3%B1%E7%95%AA%E9%A4%A8" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="35" data-area="80.41" data-land="0.0" data-monthly="32640" data-name="川口原町第2ローヤルコーポ マンション" data-no="15" data-price="4590" data-rank="17" data-type="マンション" data-walk="14" data-year="1991">
+</tr><tr class="recommendation-row" data-for="14"><td colspan="10"><span class="recommendation-rank">おすすめ 17位</span> <span class="recommendation-reason">2005年築・73㎡・専用駐車場付き・2,880万円は価格魅力大。ただし1階・駅15分・固定月額約4.9万円が再販上の重し。</span></td></tr><tr data-age="35" data-area="80.41" data-land="0.0" data-monthly="32640" data-name="川口原町第2ローヤルコーポ マンション" data-no="15" data-price="4590" data-rank="18" data-type="マンション" data-walk="14" data-year="1991">
 <td><span class="num small">#15</span></td>
 <td><strong><a class="property-jump-link" data-target="p15" href="#p15">川口原町第2ローヤルコーポ</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,590万円</td>
@@ -385,16 +405,16 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>80.41㎡</td><td>—</td><td>32,640円（＋専用庭1,560円）</td>
 <td>B</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21758242/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%B7%9D%E5%8F%A3%E5%8E%9F%E7%94%BA%E7%AC%AC2%E3%83%AD%E3%83%BC%E3%83%A4%E3%83%AB%E3%82%B3%E3%83%BC%E3%83%9D" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="22" data-area="153.61" data-land="112.13" data-monthly="0" data-name="蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工） 戸建" data-no="16" data-price="4980" data-rank="999" data-type="戸建" data-walk="14" data-year="2004">
+</tr><tr class="recommendation-row" data-for="15"><td colspan="10"><span class="recommendation-rank">おすすめ 18位</span> <span class="recommendation-reason">80㎡・4LDKは魅力だが、築35年・川口14分・1階・40戸・駐車場空無を考慮。</span></td></tr><tr data-age="22" data-area="153.61" data-land="112.13" data-monthly="0" data-name="蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工） 戸建" data-no="16" data-price="4980" data-rank="7" data-type="戸建" data-walk="14" data-year="2004">
 <td><span class="num small">#16</span></td>
 <td><strong><a class="property-jump-link" data-target="p16" href="#p16">蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,980万円</td>
 <td>西川口駅 徒歩14分</td>
 <td>2004年1月（築約22年）</td>
 <td>153.61㎡</td><td>112.13㎡</td><td>—</td>
-<td>評価保留（告知事項）</td>
+<td>A−</td>
 <td><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_warabi/nc_21405290/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA2%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="0" data-area="111.84" data-land="74.41" data-monthly="0" data-name="西青木3丁目 新築戸建 新築戸建" data-no="17" data-price="4680" data-rank="10" data-type="新築戸建" data-walk="15" data-year="2026">
+</tr><tr class="recommendation-row" data-for="16"><td colspan="10"><span class="recommendation-rank">おすすめ 7位</span> <span class="recommendation-reason">※告知事項がない前提で評価。旭化成ホームズ旧施工、土地112.13㎡・建物153.61㎡、南西11m公道、駐車2台は非常に強い。西川口14分と2004年築、二世帯仕様で買主層がやや限られるため7位。</span></td></tr><tr data-age="0" data-area="111.84" data-land="74.41" data-monthly="0" data-name="西青木3丁目 新築戸建 新築戸建" data-no="17" data-price="4680" data-rank="11" data-type="新築戸建" data-walk="15" data-year="2026">
 <td><span class="num small">#17</span></td>
 <td><strong><a class="property-jump-link" data-target="p17" href="#p17">西青木3丁目 新築戸建</a></strong><br/><span class="muted">新築戸建</span></td>
 <td>4,680万円</td>
@@ -403,7 +423,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>111.84㎡</td><td>74.41㎡</td><td>—</td>
 <td>A−</td>
 <td><a class="btn" href="https://suumo.jp/ikkodate/saitama/sc_kawaguchi/nc_21617044/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E5%B7%9D%E5%8F%A3%E5%B8%82%E8%A5%BF%E9%9D%92%E6%9C%A83%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="1" data-area="95.65" data-land="68.75" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="18" data-price="4570" data-rank="7" data-type="戸建" data-walk="12" data-year="2025">
+</tr><tr class="recommendation-row" data-for="17"><td colspan="10"><span class="recommendation-rank">おすすめ 11位</span> <span class="recommendation-reason">2026年9月完成・4LDK・建物111㎡・私道なし。西川口15分と3階建を考慮して上位一歩下。</span></td></tr><tr data-age="1" data-area="95.65" data-land="68.75" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="18" data-price="4570" data-rank="8" data-type="戸建" data-walk="12" data-year="2025">
 <td><span class="num small">#18</span></td>
 <td><strong><a class="property-jump-link" data-target="p18" href="#p18">蕨市南町4丁目 築浅戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,570万円</td>
@@ -415,7 +435,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <a class="btn" href="https://suumo.jp/ikkodate/saitama/sc_warabi/nc_21451903/" rel="noopener" target="_blank">物件サイトへ</a>
 <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA4%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a>
 </td>
-</tr><tr data-age="0" data-area="95.65" data-land="66.78" data-monthly="0" data-name="MELDIA 蕨市塚越7丁目 新築戸建 新築戸建" data-no="19" data-price="4780" data-rank="15" data-type="新築戸建" data-walk="15" data-year="2026">
+</tr><tr class="recommendation-row" data-for="18"><td colspan="10"><span class="recommendation-rank">おすすめ 8位</span> <span class="recommendation-reason">4,570万円・2025年7月築・西川口12分・土地68.75㎡・建物95.65㎡・南東4m公道。#20より410万円安く土地も約10㎡広く、総合コスパを高く評価。</span></td></tr><tr data-age="0" data-area="95.65" data-land="66.78" data-monthly="0" data-name="MELDIA 蕨市塚越7丁目 新築戸建 新築戸建" data-no="19" data-price="4780" data-rank="16" data-type="新築戸建" data-walk="15" data-year="2026">
 <td><span class="num small">#19</span></td>
 <td><strong><a class="property-jump-link" data-target="p19" href="#p19">MELDIA 蕨市塚越7丁目 新築戸建</a></strong><br/><span class="muted">新築戸建</span></td>
 <td>4,780万円</td>
@@ -424,7 +444,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>95.65㎡</td><td>66.78㎡</td><td>—</td>
 <td>B＋</td>
 <td><a class="btn" href="https://suumo.jp/ikkodate/saitama/sc_warabi/nc_21397917/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%A1%9A%E8%B6%8A7%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="1" data-area="107.47" data-land="58.35" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="20" data-price="4980" data-rank="8" data-type="戸建" data-walk="12" data-year="2025">
+</tr><tr class="recommendation-row" data-for="19"><td colspan="10"><span class="recommendation-rank">おすすめ 16位</span> <span class="recommendation-reason">新築・95㎡・東側4.1m公道。西川口15分、土地66㎡で再販力は駅近物件に一歩劣る。</span></td></tr><tr data-age="1" data-area="107.47" data-land="58.35" data-monthly="0" data-name="蕨市南町4丁目 築浅戸建 戸建" data-no="20" data-price="4980" data-rank="9" data-type="戸建" data-walk="12" data-year="2025">
 <td><span class="num small">#20</span></td>
 <td><strong><a class="property-jump-link" data-target="p20" href="#p20">蕨市南町4丁目 築浅戸建</a></strong><br/><span class="muted">戸建</span></td>
 <td>4,980万円</td>
@@ -433,7 +453,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>107.47㎡</td><td>58.35㎡</td><td>—</td>
 <td>A−</td>
 <td><a class="btn" href="https://realestate.yahoo.co.jp/used/house/detail_corp/b0025292100/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA4%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr><tr data-age="29" data-area="72.51" data-land="0.0" data-monthly="24050" data-name="レクセルプラザ西川口 マンション" data-no="21" data-price="4680" data-rank="2" data-type="マンション" data-walk="4" data-year="1997">
+</tr><tr class="recommendation-row" data-for="20"><td colspan="10"><span class="recommendation-rank">おすすめ 9位</span> <span class="recommendation-reason">2025年築・西川口12分・南6m公道・私道なし。道路条件は#18より良いが、4,980万円・土地58㎡のため総合では#18を上位。</span></td></tr><tr data-age="29" data-area="72.51" data-land="0.0" data-monthly="24050" data-name="レクセルプラザ西川口 マンション" data-no="21" data-price="4680" data-rank="2" data-type="マンション" data-walk="4" data-year="1997">
 <td><span class="num small">#21</span></td>
 <td><strong><a class="property-jump-link" data-target="p21" href="#p21">レクセルプラザ西川口</a></strong><br/><span class="muted">マンション</span></td>
 <td>4,680万円</td>
@@ -442,7 +462,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <td>72.51㎡</td><td>—</td><td>24,050円</td>
 <td>A</td>
 <td><a class="btn" href="https://suumo.jp/ms/chuko/saitama/sc_kawaguchi/nc_21468483/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E3%83%AC%E3%82%AF%E3%82%BB%E3%83%AB%E3%83%97%E3%83%A9%E3%82%B6%E8%A5%BF%E5%B7%9D%E5%8F%A3" rel="noopener" target="_blank">Googleマップ</a></td>
-</tr></tbody>
+</tr><tr class="recommendation-row" data-for="21"><td colspan="10"><span class="recommendation-rank">おすすめ 2位</span> <span class="recommendation-reason">西川口4分・72.51㎡・12階・98戸・月額24,050円。築29年でも大規模物件×高層階×駅近の流動性が非常に強い。</span></td></tr></tbody>
 </table>
 </div>
 <h2>物件別 詳細評価</h2><div id="propertyCardsContainer"><article class="property-card" data-age="7" data-area="100.6" data-land="79.84" data-monthly="0" data-name="西青木4丁目 中古戸建" data-no="1" data-price="4680" data-rank="11" data-type="戸建" data-walk="10" data-year="2019" id="p1">
@@ -728,25 +748,26 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
 <div class="table-wrap"><table class="kv"><tr><th>総戸数</th><td>40戸</td></tr><tr><th>築年数</th><td>1991年11月（築約35年）</td></tr><tr><th>管理費</th><td>14,470円</td></tr><tr><th>修繕積立金</th><td>18,170円（約226円/㎡）</td></tr><tr><th>管理費＋修繕積立金</th><td>32,640円（＋専用庭1,560円）</td></tr><tr><th>管理形態</th><td>全部委託・日勤</td></tr><tr><th>管理会社</th><td>合人社計画研究所</td></tr><tr><th>大規模修繕履歴</th><td>公開情報では確実な大規模修繕履歴を確認できず。</td></tr><tr><th>今後の大規模修繕予定</th><td>公開確認できず</td></tr><tr><th>修繕積立金の値上げ予定</th><td>公開確認できず</td></tr><tr><th>修繕積立金不足情報</th><td>公開確認できず。築35年・40戸のため、積立残高と設備更新計画を確認。</td></tr><tr><th>一時金徴収予定</th><td>公開確認できず</td></tr><tr><th>長期修繕計画</th><td>公開確認できず</td></tr><tr><th>駐車場形式・状況</th><td>敷地内・リンク住戸は空無</td></tr><tr><th>駐車場料金</th><td>空無のため現行募集額不明</td></tr></table></div>
 </div>
 </div>
-</article><article class="property-card" data-age="22" data-area="153.61" data-land="112.13" data-monthly="0" data-name="蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）" data-no="16" data-price="4980" data-rank="999" data-type="戸建" data-walk="14" data-year="2004" id="p16">
+</article><article class="property-card" data-age="22" data-area="153.61" data-land="112.13" data-monthly="0" data-name="蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）" data-no="16" data-price="4980" data-rank="7" data-type="戸建" data-walk="14" data-year="2004" id="p16">
 <div class="property-head">
 <div>
 <span class="num">#16</span><span class="type">戸建</span>
 <h3>蕨市南町2丁目 中古戸建（旭化成ホームズ旧施工）</h3>
 <div class="sub">4,980万円　｜　西川口駅 徒歩14分　｜　4LDK / 土地112.13㎡ / 建物153.61㎡</div>
 </div>
-<div class="grade">評価保留（告知事項）</div>
+<div class="grade">A−</div>
 </div>
 <div class="actions"><a class="btn" href="https://suumo.jp/chukoikkodate/saitama/sc_warabi/nc_21405290/" rel="noopener" target="_blank">物件サイトへ</a> <a class="btn" href="https://www.google.com/maps/search/?api=1&amp;query=%E5%9F%BC%E7%8E%89%E7%9C%8C%E8%95%A8%E5%B8%82%E5%8D%97%E7%94%BA2%E4%B8%81%E7%9B%AE" rel="noopener" target="_blank">Googleマップ</a></div><div class="property-alert">
-<strong>最重要確認：告知事項あり</strong><br/>
-    SUUMOに「告知事項あり」と明記されています。内容、発生時期、心理的・物理的瑕疵の区分、
-    今後の売却時にも説明義務が残る可能性があるかを確認できるまで、購入判断は保留とします。
+<strong>※告知事項あり　元住民が死去</strong><br/>
+      ランキングは、この告知事項がないものとして物件そのものの条件だけで評価しています。
+      実際の購入判断では、死亡の状況・時期・場所、売主・仲介会社からの説明内容、
+      将来売却時の告知への影響を必ず確認してください。
     </div>
 <div class="grid2">
 <div class="panel">
 <h4>専門家チェック</h4>
-<p><b>注意点：</b>最重要：SUUMOに「※告知事項あり」と明記。内容が不明なため現段階では購入判断不可。南西11m公道・私道なし・旭化成ホームズ旧施工は強い条件。</p>
-<p><b>売却時：</b>告知事項が将来も説明対象になる内容なら再販価格・売却期間に大きく影響。二世帯仕様も買主層を狭める。一方、土地112㎡・公道11m・駐車2台は強い。</p>
+<p><b>注意点：</b>旭化成ホームズ旧施工の軽量鉄骨住宅。土地112.13㎡、建物153.61㎡、南西11m公道、駐車2台という物理条件は非常に強い。二世帯住宅仕様のため、通常の4LDK戸建より買主層がやや限られる点は確認が必要。</p>
+<p><b>売却時：</b>告知事項を除外して考えれば、土地の広さ・道路幅・駐車2台が再販上の強み。一方、西川口駅徒歩14分、2004年築、二世帯仕様は駅近マンションや築浅戸建より流動性で劣るため、総合7位と評価。</p>
 </div>
 <div class="panel">
 <h4>管理・修繕・駐車場</h4>
@@ -999,12 +1020,19 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
   let currentKey = 'rank';
   let currentDir = 'asc';
 
+  function mainRows(){
+    return Array.from(tbody.querySelectorAll('tr:not(.recommendation-row)'));
+  }
+
+  function recFor(row){
+    const no=row.dataset.no;
+    return tbody.querySelector(`tr.recommendation-row[data-for="${no}"]`);
+  }
+
   function valueOf(el,key){
-    if(key === 'name'){
-      return (el.dataset.name || '').toLocaleLowerCase('ja');
-    }
-    if(key === 'no'){
-      const m=(el.dataset.no || '').match(/\d+/);
+    if(key==='name') return (el.dataset.name||'').toLocaleLowerCase('ja');
+    if(key==='no'){
+      const m=(el.dataset.no||'').match(/\d+/);
       return m ? Number(m[0]) : 9999;
     }
     const v=Number(el.dataset[key]);
@@ -1014,28 +1042,23 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
   function compare(a,b,key,dir){
     let av=valueOf(a,key), bv=valueOf(b,key);
 
-    // Missing values should remain at bottom for these comparisons.
     if(['area','land','monthly'].includes(key) && (av===0 || bv===0)){
       if(av===0 && bv!==0) return 1;
       if(bv===0 && av!==0) return -1;
     }
 
     let result;
-    if(typeof av === 'string'){
-      result=av.localeCompare(bv,'ja');
-    }else{
-      result=av-bv;
-    }
+    if(typeof av==='string') result=av.localeCompare(bv,'ja');
+    else result=av-bv;
     return dir==='asc' ? result : -result;
   }
 
   function matches(row){
     const type=typeFilter ? typeFilter.value : 'all';
     const q=nameFilter ? nameFilter.value.trim().toLocaleLowerCase('ja') : '';
-    const typeOK=type==='all' || (row.dataset.type || '').includes(type);
-    const hay=((row.dataset.name || '')+' '+(row.textContent || '')).toLocaleLowerCase('ja');
-    const qOK=!q || hay.includes(q);
-    return typeOK && qOK;
+    const typeOK=type==='all' || (row.dataset.type||'').includes(type);
+    const hay=((row.dataset.name||'')+' '+(row.textContent||'')).toLocaleLowerCase('ja');
+    return typeOK && (!q || hay.includes(q));
   }
 
   function labelFor(key,dir){
@@ -1072,14 +1095,22 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
   }
 
   function apply(){
-    const rows=Array.from(tbody.querySelectorAll('tr'));
+    const rows=mainRows();
     rows.sort((a,b)=>compare(a,b,currentKey,currentDir));
-    rows.forEach(row=>tbody.appendChild(row));
+
+    // Move each main row and its recommendation row as one block.
+    rows.forEach(row=>{
+      const rec=recFor(row);
+      tbody.appendChild(row);
+      if(rec) tbody.appendChild(rec);
+    });
 
     let shown=0;
     rows.forEach(row=>{
       const ok=matches(row);
+      const rec=recFor(row);
       row.classList.toggle('hidden-by-filter',!ok);
+      if(rec) rec.classList.toggle('hidden-by-filter',!ok);
       if(ok) shown++;
     });
 
@@ -1107,7 +1138,7 @@ footer{color:var(--muted);font-size:12px;margin-top:30px}
         currentDir=currentDir==='asc' ? 'desc' : 'asc';
       }else{
         currentKey=key;
-        currentDir=(key==='area' || key==='land') ? 'desc' : 'asc';
+        currentDir=(key==='area'||key==='land') ? 'desc' : 'asc';
       }
       apply();
     });
